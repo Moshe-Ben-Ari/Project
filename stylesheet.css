@@ -1,0 +1,298 @@
+
+body {
+    /*color gradiant is similar to the darkening shade of blue as you descend. color scheme is bright to dark blue with a bright sandy beige*/
+    background: linear-gradient( to bottom, paleturquoise 0%, hsl(250, 51%, 40%) 100%);
+    font-family:  "alef", sans-serif;
+    font-size: 20px;
+    margin: 3%;
+    }
+
+header {
+    /*negetive margin is to spread the header across the page*/
+    width: auto;
+    margin: -3% -3% 0 -3%;
+    border: midnightblue solid 0.3vw;
+    border-bottom: 0;
+    padding-top: 1%;
+    padding-bottom: 1%;
+    }
+
+/*following 3 class declarations are to set background images to the headers of the different pages*/
+.isplash {
+    /*image is of an island in the maldives from my own gallery*/
+    background: url("media/main page/title_splash.jpg") no-repeat 0 / 100% 100% ;
+    }
+
+.gsplash {
+    /*image is of compressed air tanks for scuba diving. image taken from https://www.dreamstime.com/ and is used under their RF-LL license, credits to the owner are provided in the corner of the header as per terms and conditions*/
+    background: url("media/gear/dreamstimefree_1947845.2.jpg") no-repeat 0 / 100% 100% ;
+    }
+
+.fsplash {
+    /*image is of a reef in the maldives from my own gallery*/
+    background: url("media/fish/fsplash.jpg") no-repeat 0 / 100% 100%;
+    }
+
+#top  {
+    /*header text remains the same size regardless of zoom*/
+    font: 5vw "rubik dirt";
+    color: midnightblue ;
+    background-color: rgba(255, 222, 173, 0.75);
+    text-align: center;
+    margin: 3vw 32vw 5vw 32vw;
+    }
+
+nav {
+    /*nav section is sticky, staying on the top of the screen as you scroll*/
+    position: sticky;
+    top: 0px;
+    z-index: 1;
+    }
+
+.navbar {
+    /*image is a continuation from the header's on the main page*/
+    list-style-type: none;
+    margin: 0 -3% 0 -3% ;
+    padding: 0;
+    border: midnightblue solid 0.3vw;
+    border-bottom-right-radius: 5px;
+    border-bottom-left-radius: 5px;
+    overflow: hidden;
+    background: #fff url("media/main page/nav_bg.jpg") no-repeat 0 / 100% 100% ;
+    }
+
+
+.navbar li {
+    /*for the individual tabs in the navbar*/
+    float: right;
+    font-size: 2.25vw;
+    border-left: 1px solid black
+    }
+                
+.navbar a {
+    /*keeps the text of the tabs simple as apposed to default for links*/
+    display: block;
+    color: navajowhite;
+    text-align: center;
+    padding: 0.5em;
+    text-decoration: none;
+    }
+
+.navbar li a:hover:not(.active){
+    /*adds underline to the tab text, unless it is the current page*/
+    text-decoration: underline;
+    color: navajowhite;
+    }
+
+.active {
+    /*changes background of current page's tab*/
+    background-color: navajowhite;
+    color: midnightblue !important;
+    }    
+
+.navbar :last-child {
+    /*about tab stays left with no border*/
+    float: left;
+    border-left: 0;
+    }
+
+#popsec {
+    /*next 3 declarations for appearence of the element that includes the popup button*/
+    width: 20%;
+    margin: 3% 2% 2% 0 ;
+    padding: 10px;
+    text-align: center;
+    background-color: navajowhite;
+    border: 3px solid midnightblue;
+    position: relative;
+    float: left;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    }
+
+#popsec blockquote {
+    Border: 3px solid black;
+    padding: 7px;
+    font-size: 1em;
+    }
+
+#popsec a {
+    padding: 3px;
+    font-size: 1em;
+    font-weight: bold;
+    }
+
+
+.popup .popuptext {
+    /*popup appearence, appears under the button*/
+    visibility: hidden;
+    background-color: navajowhite;
+    color: black;
+    text-align: center;
+    border-radius: 6px;
+    padding: 8px 0;
+    border: black solid 2px;
+    position: absolute;
+    width: 80%;
+    z-index: 0;
+    top: 125%;
+    left: 10%; 
+    }
+    
+.popup .show {
+    /*popup function*/
+    visibility: visible;
+    -webkit-animation: fadeIn 1s;
+    animation: fadeIn 1s;
+    }
+      
+/*animation for fadein/out of popup*/
+@-webkit-keyframes fadeIn {
+    from {opacity: 0;} 
+    to {opacity: 1;}
+    }
+      
+@keyframes fadeIn {
+    from {opacity: 0;}
+    to {opacity:1 ;}
+    }
+
+.cred {
+    /*defines the appearence of the credit line for BG of header in 'gear.html'*/
+    background-color: rgba(255, 255, 255, 0.7);
+    font-size: 1.14vw;
+    padding: 0.5vw 1vw 0.5vw 1vw;
+    position: absolute;
+    bottom: 6%;
+    right: 1%;
+    }
+
+.cred a {
+    color: black;
+    }
+.cred a:link {
+    text-decoration: none;
+    }
+  
+.cred a:visited {
+    text-decoration: none;
+    }
+
+.title {
+    /*main titles*/
+    font-size: 4vw;
+    font-weight: bold;
+    color: midnightblue;
+    }
+
+.stitle {
+    /*small titles*/
+    font-size: 1.6vw;
+    }
+
+p {
+    margin-inline-end: 15%;
+    }
+
+#list {
+    list-style-type: "\1F93F";
+    margin: 2vw 
+    }
+
+#list li{
+    padding-right: 5px;
+    }    
+
+.gearsection {
+    /*defines each gear segment so that the descriptions appear on the sides of the page, image in the center with a border separating the segments.
+    child sections will be spaced out equally using justify content*/
+    margin: 0 4vw 0 4vw;
+    padding: 3vw 0 3vw 0;
+    border-bottom: navajowhite dashed 5px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: fit-content;
+    width: inherit;
+    }
+
+.hebrew {  
+    /*block of hebrew text*/
+    width: 30%;
+    direction: rtl;
+    }
+
+.mid {
+    /*image of gear*/
+    max-width: 300px;
+    max-height: 400px;
+    width: 33vw;
+    height: 44vw;
+    object-fit: fill;
+    border: lightseagreen solid 4px;
+    }
+
+.english {
+    /*block of english text, with direction set at left to right*/
+    width: 30%;
+    direction: ltr;
+    }
+
+table, th, td {
+    /*styling for table*/
+    background-color: lightseagreen;
+    border: navajowhite solid 3px;
+    border-collapse: collapse;
+    width: auto;
+    }
+
+caption, th {
+    font-size: 24px;
+    color: midnightblue;
+    }
+
+th, td{
+    padding: 15px;
+    }
+
+caption {
+    background-color: lightseagreen;
+    border: 3px solid navajowhite;
+    border-bottom: 0px;
+    border-collapse: collapse;
+    }
+
+img  {
+    width: 640px;
+    height: 360px;
+    }
+
+video  {
+    width: 640px;
+    height: 360px
+    }
+
+.refbutton {
+    margin: 1vw 1vw 0 0;  
+    }
+
+footer  {
+    background-color: navajowhite;
+    margin-top: 20px;
+    padding-top: 5px;
+    padding-right: 20px;
+    padding-bottom: 15px;
+    border-radius: 0.25cm;
+    }
+
+footer p {
+    margin-top: 5px;
+    margin-bottom: 10px;
+    }
+
+button {
+    font-size: 20px;
+}

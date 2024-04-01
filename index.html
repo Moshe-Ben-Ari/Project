@@ -1,0 +1,111 @@
+<!--MAIN PAGE
+WRITTEN BY MOSHE BEN ARI
+-->
+
+<!DOCTYPE html>
+    <html lang="hebrew">
+        <head>
+            <meta charset="utf-8">
+            <meta name="description" content="in short on diving">
+            <meta name="keywords" content="diving, scuba diving, hebrew, fish, sea">
+            <meta name="author" content="Moshe Ben Ari">
+            <meta name="viewport" content="width=device-width, intial-scale=1.0">
+            <!--fonts to be used, rubik dirt for the main title, fits the sandy texture of sand, and alef for body-->
+            <link href="https://fonts.googleapis.com/css2?family=Rubik+Dirt&display=swap" rel="stylesheet">
+            <link rel="preconnect" href="https://fonts.googleapis.com">
+            <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+            <link href="https://fonts.googleapis.com/css2?family=Alef:wght@400;700&family=Rubik+Dirt&display=swap" rel="stylesheet">
+            <!--icons from bootstrap-->
+            <link rel="stylesheet" href="stylesheet.css">
+            <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+            <title>עולם הצלילות</title>
+        </head>
+        <body dir="rtl">
+            <!--header wil have different BG pictures, nav and footer will remain constant across all pages, current page will be highlighted in navbar-->
+            <header class="isplash">
+                    <h1 id="top">צלילות סקובה</h1>
+            </header>
+            <nav>
+                <!--navigation bar.-->
+                <ul class="navbar">
+                    <li><a class="active" href="index.html">דף ראשי</a></li>
+                    <li><a href="tech.html">יותר לעומק</a></li>
+                    <li><a href="gear.html">ציוד</a></li>
+                    <li><a href="fish.html">חיים בשונית</a></li>
+                    <li><a href="#top">חזרה למעלה</a></li>
+                    <li><a href="#abt">עודות</a></li>
+                </ul>
+            </nav>
+            <!--excerpt on diving from wikipedia appears as a popup, click aside element for a popup-->
+            <section id="popsec" class="popup" onclick="popupfunc()">
+                לחץ להגדרה של צלילת סקובה מויקיפדיה.
+                <span class="popuptext" id="myPopup">
+                    <blockquote>
+                        "צלילת הסקובה (SCUBA - ראשי תיבות של המונח self-contained underwater breathing apparatus, בתרגום לעברית: מנגנון עצמאי לנשימה מתחת למים) היא צלילה בעזרת מערכת המספקת אוויר לנשימה לצולל (ווסת צלילה)"
+                    </blockquote>
+                    <cite>
+                        <!--link is to hebrew entry for diving on wikipedia -->
+                        <a href="https://tinyurl.com/mrxu4j8r" target="_blank">מאתר וידיפדיה, תחת המונח "צלילה"</a>
+                    </cite>
+                </span>
+                <script>
+                  // to open popup when clicking on 'aside'
+                  function popupfunc() {
+                        var popup = document.getElementById("myPopup");
+                        popup.classList.toggle("show");
+                    }
+                </script>  
+            </section>
+            <main>
+                <!--main blurb and key diving rules-->
+                <section>
+                    <h3 class="title">בקצרה על צלילות</h3>
+                    <p>
+                        צלילות סקובה מתבצעות על ידי נשימת אוויר דרך ווסת שמחובר למיכל של אוויר שדחוס בלחץ של <em>200<sub>psi</sub></em>.
+                        העליה והירידה במים מתבצע תוך כדי נשימה ונעזרים במשקולות עופרת וחליפת איזון. כאשר ממלאים את הריאות באוויר, 
+                        נפח הגוף עולה ומתחילים לעלות, וכשמרוקנים אוויר מהריאות, נפך הגוף יורד, ושוקעים.
+                        חשוב מעוד שיש צורך לא עצור את הנשימה תוך כדי צלילה כדי לשמור על האיזון וכדי שלא נגיע למצב שהריאות נפגעים. 
+                        <br>
+                        עם כל זה, צלילה זה פעילות מעוד מהנה, ומעוד בטוח כל עוד ששומרים על הכללים.
+                    </p>
+                </section>
+                <section>
+                    <h3 class="title">חוקים בצלילות</h3>
+                    <p>
+                      על מנת שנהנה במהלך הצלילה שלנו, חייבים לשמור על כמה חוקים כדי לשמור על עצמנו ועל חברינו לצלילה, או באדי בלאז.
+                    </p>
+                   <ul id="list">
+                       <li>לשמור על נשימה רצופה.</li>
+                       <li>לשים לב לעומק שלכם, ולא להעמיק יותר ממה שהוסכם.</li>
+                       <li>לפמפם את העוזניים במהלך הירידה כדי לאזן את הלחץ על עור התוף.</li>
+                       <li>לא לצלול לבד. תמיד יותר בטוח ויותר כיף לצלולל עם חבר.</li>
+                       <li>לא לעבד את הבאדי שלכם.</li>
+                       <li>לתקשר עם הבאדי שלכם בעזרת סימנים מוסכמים.</li>
+                       <li>לבדוק את כמות האוויר שנשאר ולעדכן את הבאדי מידי פעם.</li>
+                       <li>לחתור בעזרת הסנפירים, ולא עם הידיים.</li>
+                       <li>לנפח את המאזן בירידה, לרוקן בעלייה. לא רוצים לשקועה או לעלות ללא שליטה</li>
+                       <li>לא לגעת בעלי חיים או בשוניות. אנחנו אורחים בבית שלהם, ומגע עלולה לפגוע בהם או בנו.</li>
+                       <li>אם צוללים בקרבת אלמוגים, יש לשים לב שלא מעיפים חול על האלמוגים.</li>
+                       <li>לוודא שלא חורגים מהזמן שתוכנן או לשים לב לזמן שמחשב הצלילה מורה.</li>
+                       <li>בעלייה, לעלות בקצב איטי ולבצע עצירת בטיחות, בהתעם לצורך.</li>
+                       <li>לא לטוס במשך 24 אחרי סיום הצלילה.</li>
+                   </ul>
+                </section>
+                <footer id="abt">
+                <p>
+                    נכתב על ידי 
+                    <author>משה בן ארי</author>.
+                    <br>                
+                </p>
+                <a href="mailto:moshe.benari@gmail.com">
+                    <button type="button" class="contact">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-envelope-at" viewBox="0 0 16 16">
+                        <path d="M2 2a2 2 0 0 0-2 2v8.01A2 2 0 0 0 2 14h5.5a.5.5 0 0 0 0-1H2a1 1 0 0 1-.966-.741l5.64-3.471L8 9.583l7-4.2V8.5a.5.5 0 0 0 1 0V4a2 2 0 0 0-2-2zm3.708 6.208L1 11.105V5.383zM1 4.217V4a1 1 0 0 1 1-1h12a1 1 0 0 1 1 1v.217l-7 4.2z"></path>
+                        <path d="M14.247 14.269c1.01 0 1.587-.857 1.587-2.025v-.21C15.834 10.43 14.64 9 12.52 9h-.035C10.42 9 9 10.36 9 12.432v.214C9 14.82 10.438 16 12.358 16h.044c.594 0 1.018-.074 1.237-.175v-.73c-.245.11-.673.18-1.18.18h-.044c-1.334 0-2.571-.788-2.571-2.655v-.157c0-1.657 1.058-2.724 2.64-2.724h.04c1.535 0 2.484 1.05 2.484 2.326v.118c0 .975-.324 1.39-.639 1.39-.232 0-.41-.148-.41-.42v-2.19h-.906v.569h-.03c-.084-.298-.368-.63-.954-.63-.778 0-1.259.555-1.259 1.4v.528c0 .892.49 1.434 1.26 1.434.471 0 .896-.227 1.014-.643h.043c.118.42.617.648 1.12.648m-2.453-1.588v-.227c0-.546.227-.791.573-.791.297 0 .572.192.572.708v.367c0 .573-.253.744-.564.744-.354 0-.581-.215-.581-.8Z"></path>
+                        </svg>
+                        צור קשר
+                    </button>
+                </a>
+            </footer>
+        </body>
+    </html>
