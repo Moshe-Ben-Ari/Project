@@ -183,18 +183,19 @@ nav {
 
 .title {
     /*main titles*/
-    font-size: 4vw;
+    font-size: 4rem;
     font-weight: bold;
     color: midnightblue;
     }
 
 .stitle {
-    /*small titles*/
-    font-size: 1.6vw;
+    /*secondary titles*/
+    font-size: 1.6rem;
     }
 
 p {
     margin-inline-end: 15%;
+    margin-bottom: 1vw;
     }
 
 #list {
