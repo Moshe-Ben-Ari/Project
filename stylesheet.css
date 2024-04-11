@@ -181,6 +181,12 @@ nav {
     text-decoration: none;
     }
 
+
+section:not(.hebrew, .english) {
+    /*adds a dashed line at the bottom of section elements, aside from the designated classes*/
+    border-bottom: navajowhite dashed 5px;
+    }
+
 .title {
     /*main titles*/
     font-size: 4rem;
@@ -212,7 +218,6 @@ p {
     child sections will be spaced out equally using justify content*/
     margin: 0 4vw 0 4vw;
     padding: 3vw 0 3vw 0;
-    border-bottom: navajowhite dashed 5px;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -224,17 +229,7 @@ p {
     /*block of hebrew text*/
     width: 30%;
     direction: rtl;
-    }
-
-.mid {
-    /*image of gear*/
-    max-width: 300px;
-    max-height: 400px;
-    width: 33vw;
-    height: 44vw;
-    object-fit: fill;
-    border: lightseagreen solid 4px;
-    }
+    }   
 
 .english {
     /*block of english text, with direction set at left to right*/
@@ -266,19 +261,25 @@ caption {
     border-collapse: collapse;
     }
 
-img  {
-    width: 640px;
-    height: 360px;
-    }
-
-video  {
-    width: 640px;
-    height: 360px
-    }
-
 .refbutton {
-    margin: 1vw 1vw 0 0;  
+    margin: 1vw 1vw 0 0;
     }
+
+.mediah {
+    /*tall media*/
+    max-width: 330px;
+    max-height: 440px;
+    width: 33vw;
+    height: 44vw;
+    }
+
+.mediaw  {
+    /*wide media*/
+    max-width: 440px;
+    max-height: 330px;
+    width: 44vw;
+    height: 33vw;
+    } 
 
 footer  {
     background-color: navajowhite;
