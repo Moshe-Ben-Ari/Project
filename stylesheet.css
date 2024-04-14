@@ -107,8 +107,11 @@ li .dropdown {
     }
 
 .dropcontent a {
-    color: black;
+    color: midnightblue;
+    background-color: navajowhite;
     padding: 0.5em;
+    border: midnightblue solid 0 0.3vw 0.3vw 0.3vw;
+    border-radius: 5px;
     text-decoration: none;
     display: block;
     text-align: right;
