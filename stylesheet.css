@@ -104,7 +104,6 @@ li .dropdown {
     display: none;
     position: absolute;
     z-index: 1;
-    color: midnightblue;
     background-color: navajowhite;
     padding: 0.5em;
     border: midnightblue solid 0.3vw;
@@ -113,6 +112,7 @@ li .dropdown {
     }
 
 .dropcontent a {
+    color: midnightblue;
     text-decoration: none;
     display: block;
     text-align: right;
