@@ -96,6 +96,28 @@ nav {
     border-left: 0;
     }
 
+li .dropdown {
+    display: inline-block;
+   }
+
+.dropcontent {
+    display: none;
+    position: absolute;
+    z-index: 1;
+    }
+
+.dropcontent a {
+    color: black;
+    padding: 0.5em;
+    text-decoration: none;
+    display: block;
+    text-align: right;
+    }
+
+.dropdown:hover .dropcontent{
+    display:block;
+    }
+
 #popsec {
     /*next 3 declarations for appearence of the element that includes the popup button*/
     width: 20%;
