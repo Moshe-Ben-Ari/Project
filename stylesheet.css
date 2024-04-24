@@ -97,16 +97,20 @@ nav {
     }
 
 li .dropdown {
+    /*following 5 declarations for dropdown menu on gear tab*/
     display: inline-block;
-   }
+    }
 
 .dropcontent {
+    /*style for dropdown menu itself*/
     display: none;
     position: absolute;
     z-index: 1;
     background-color: navajowhite;
     padding: 0.5em;
-    border: midnightblue solid 0.3vw!important; 
+    border: midnightblue solid 0.3vw!important;
+    border-bottom-left-radius: 5px; 
+    border-bottom-right-radius: 5px;
     font-size: 0.75em;
     }
 
@@ -120,9 +124,10 @@ li .dropdown {
     }
 
 .dropcontent a:last-child{
+    /*last link in dropdown doesn't float left, a property inhereted from a previous declaration*/
     float: none;
     border-bottom: 0;
-}
+    }
 
 .dropdown:hover .dropcontent{
     display:block;
@@ -130,7 +135,8 @@ li .dropdown {
 
 #popsec {
     /*next 3 declarations for appearence of the element that includes the popup button*/
-    width: 20%;
+    max-width: 20%;
+    min-width: fit-content;
     margin: 3% 2% 2% 0 ;
     padding: 10px;
     text-align: center;
@@ -169,6 +175,7 @@ li .dropdown {
     border: black solid 2px;
     position: absolute;
     width: 80%;
+    min-width: fit-content;
     z-index: 0;
     top: 125%;
     left: 10%; 
@@ -312,6 +319,10 @@ caption {
     width: 44vw;
     height: 33vw;
     } 
+
+.fleft {
+    float: left;
+}
 
 footer  {
     background-color: navajowhite;

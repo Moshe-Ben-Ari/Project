@@ -16,8 +16,8 @@ WRITTEN BY MOSHE BEN ARI
             <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
             <link href="https://fonts.googleapis.com/css2?family=Alef:wght@400;700&family=Rubik+Dirt&display=swap" rel="stylesheet">
             <!--icons from bootstrap-->
-            <link rel="stylesheet" href="stylesheet.css">
             <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+            <link rel="stylesheet" href="stylesheet.css">
             <title>עולם הצלילות</title>
         </head>
         <body dir="rtl">
@@ -31,6 +31,8 @@ WRITTEN BY MOSHE BEN ARI
                     <li><a href="index.html">דף ראשי</a></li>
                     <li><a class="active" href="tech.html">יותר לעומק</a></li>
                     <li class="dropdown">
+                        <!--tab for gear.html link has a dropdown menu coresponding to each gear section using links with id's to link to each section. 
+                        dropdown shows upon hovering over the tab as defined in the CSS file-->
                         <a class="dropbtn" href="javascript:void(0)">ציוד</a>
                         <section class="dropcontent">
                             <a href="gear.html">ראש הדף</a>
@@ -55,7 +57,8 @@ WRITTEN BY MOSHE BEN ARI
                         הרבה מועדוני צלילה או חברות שונות מציעות את האפשרות, וזה דרך פשוטה להכיר את התחביב.
                         רוב צלילות היכרות מתבצעות במים רדודים יחסית ועם מדריך מוסמך צמוד על מנת שצלילה תיהיה פשוטה, מנסיבות שנבהיר אחר כך.
                         אם רוצים להנות עוד יותר עם צלילות עצמאיות (עם באדי כמובן) ויותר עמוקות, יש צורך לעבור קורס הכשרה. 
-                        רישיון שמקבלים מקורס כזה מכובד ברחבי העולם, ואין לו תוכף, אבל יש צורך בלבצע צלילת ריענון אם הצולל לא צלל מעל שנה (בארץ מחמירים למעל חצי שנה).
+                        רישיון שמקבלים מקורס כזה מכובד ברחבי העולם, ואין לו תוכף, אבל יש צורך בלבצע צלילת ריענון אם הצולל לא צלל מעל שנה (בארץ מחמירים למעל חצי שנה). 
+                        עוקבים אחרי צלילות ביומנים, ומועדוני צלילות חותמים על מנת לאמת את אצם זה שהצלילה בוצע.
                         שמות ההכשרות הבאים הינם קורסים של <abbr title="Scuba Diving International">SDI</abbr>, 
                         סוכנות הכשרת צוללנים בינלאומי.
                     </p>
@@ -82,7 +85,24 @@ WRITTEN BY MOSHE BEN ARI
                     </p>
                 </section>
                 <section>
-                    <h3 class="title">הצד הטכני</h3>
+                    <h3 class="title">הצד הטכני</h3>               
+                    <section id="popsec"  class="popup" onclick="popupfunc()">
+                        טבלת חוב חנקן.
+                        <span dir="ltr" class="popuptext" id="myPopup">
+                            <!--image is of a diving time caltulation table for nitrox mix. image is public domain courtesy of wikimedia commons. 
+                                information on original creator of the image available here: https://commons.wikimedia.org/wiki/File:Nitrox_tables.JPG -->
+                            <img class="mediaw" src="https://upload.wikimedia.org/wikipedia/commons/3/3e/Nitrox_tables.JPG" alt="טבלת צלילה" title="טבלת צלילה">
+                            <cite>
+                                <a href="https://upload.wikimedia.org/wikipedia/commons/3/3e/Nitrox_tables.JPG" target="_blank">טבלת חוב חנקן לצלילת נייטרוקס מאתר ויקימדיה.</a>
+                            </cite>
+                        </span>
+                        <script> 
+                          function popupfunc() {
+                                var popup = document.getElementById("myPopup");
+                                popup.classList.toggle("show");
+                            }
+                        </script>
+                    </section>
                     <p>
                         האוויר בסביבות גובה פני הים, לחץ האוויר הינה אטמוספירה אחת, או בערך 1<sub>בר</sub>, 
                         ומורכב מכ-78% חנקן, כ-21% חמצן, וכ-1% גזים אחרים.
@@ -93,13 +113,12 @@ WRITTEN BY MOSHE BEN ARI
                         הגוף מסוגל להתמודד עם יתר חנקן בדם בכמויות סבירות, אבל יש צורך להתנהג בהתאם. 
                         כאשר צוללים, רמת החנקן עולה,וכשאר עולים הלחץ יורד, והחנקן שמומס בדם עלול ליצור בועות זעירות בדם שעלולות לגרום לסתימות בכלי הדם. 
                         לתופעה זו קוראים דקומפרסייה, דבר שעלול לקרות אם עולים בקצב מהיר מידי,צוללים בעומק לאורך זמן רב מידי או אם סופגים יותר מידי חנקן לאורך זמן קצר. 
-                        בגלל תופעה זו יש צורך לנוח לפרק זמן  בין צלילות, ופרק זמן של 24 שעות מספיק לגוף להיפטר מכל החנקן העודף בדם, ולכןלא ניתן לטוס עד ש-24 שעות עברו מאז הצלילה האחרונה. 
+                        בגלל תופעה זו יש צורך לנוח לפרק זמן  בין צלילות, ופרק זמן של 24 שעות מספיק לגוף להיפטר מכל החנקן העודף בדם, ולכן לא ניתן לטוס עד ש-24 שעות עברו מאז הצלילה האחרונה. 
                         ניתן לחשב את זמן המנוחה הזה לפי תבלאות חוב חנקן, אבל שימוש במחשב צלילה מאפשר לצולל לדעת בדיוק כמה זמן נותר לו לצלול בעומק מסויים לפני שהוא עלול ללקות בדקומפרסייה. 
-                        ניתן להאריך את הזמן בעומק על ידי שימוך בתערובת אוויר שונים כגון נייטרוקס, תערובת עם אחוז חמצן מוגבר. 
+                        ניתן להאריך את הזמן בעומק על ידי שימוך בתערובת אוויר שונים כגון נייטרוקס, תערובת עם אחוז חמצן מוגבר (בדרך כלל בין 32% חמצן ל34%).
                         דבר זה מאפשר לצלילות יותר ארוכות, אבל יש גבול לעומק מפני שחמצן רעיל בריכוז גבוהה. 
                         ישנם תבלאות לשם תכנון צלילה בשימוש בנייטרוקס בריכוזי חמצן שונים, אבל שוב, מחשבי צלילה מסוגלים לחשב את הזמנים האלה אוטומטית.     
                     </p>
-                    <a class="mediaw" href="https://upload.wikimedia.org/wikipedia/commons/3/3e/Nitrox_tables.JPG" alt="טבלת צלילה" title="טבלת צלילה"></a>
                 </section>
             </main>
             <footer id="abt">
