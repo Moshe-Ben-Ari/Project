@@ -122,6 +122,11 @@ li .dropdown {
     display: block;
     text-align: right;
     }
+    
+.dropcontent a:hover {
+    color: navajowhite;
+    background-color: midnightblue;
+    }
 
 .dropcontent a:last-child{
     /*last link in dropdown doesn't float left, a property inhereted from a previous declaration*/
@@ -221,14 +226,14 @@ li .dropdown {
     }
 
 
-section:not(.hebrew, .english) {
+section:not(.hebrew, .english, .noline) {
     /*adds a dashed line at the bottom of section elements, aside from the designated classes*/
     border-bottom: navajowhite dashed 5px;
     }
 
 .title {
     /*main titles*/
-    font-size: 4rem;
+    font-size: 3.5rem;
     font-weight: bold;
     color: midnightblue;
     }
@@ -320,10 +325,6 @@ caption {
     height: 33vw;
     } 
 
-.fleft {
-    float: left;
-}
-
 footer  {
     background-color: navajowhite;
     margin-top: 20px;
@@ -340,4 +341,11 @@ footer p {
 
 button {
     font-size: 20px;
-}
+    background-color: navajowhite;
+    padding: 3px 3px 3px 4px;
+    border: midnightblue solid 3px;
+    border-radius: 1px;
+    }
+button:hover{
+    background-color: lightseagreen;
+    }
