@@ -205,11 +205,12 @@ li .dropdown {
     }
 
 .cred {
-    /*defines the appearence of the credit line for BG of header in 'gear.html'*/
+    /*defines the appearence of the credit line for BG of header in 'gear.html'. 
+    note, attempting to open the link to the image via its id will result in being taken to a capta page taht may not work if html is alunched to a blank chrome window, try using a window with a user logged in*/
     background-color: rgba(255, 255, 255, 0.7);
     font-size: 1.14vw;
     padding: 0.5vw 1vw 0.5vw 1vw;
-    position: absolute;
+    position: relative;
     bottom: 6%;
     right: 1%;
     }
@@ -337,6 +338,17 @@ footer  {
 footer p {
     margin-top: 5px;
     margin-bottom: 10px;
+    position: relative;
+    }
+
+.contact {
+    font-size: 0.7em;
+    }
+
+.nostyle_link {
+    color: black;
+    text-decoration: none;
+
     }
 
 button {
@@ -348,4 +360,10 @@ button {
     }
 button:hover{
     background-color: lightseagreen;
+    }
+
+audio {
+    float: left;
+    width: 17%;
+    margin: 0 0 0 1em;
     }
