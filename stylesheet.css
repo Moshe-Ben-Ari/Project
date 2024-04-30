@@ -356,7 +356,7 @@ button {
     background-color: navajowhite;
     padding: 3px 3px 3px 4px;
     border: midnightblue solid 3px;
-    border-radius: 1px;
+    border-radius: 4px;
     }
 button:hover{
     background-color: lightseagreen;
