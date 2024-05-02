@@ -42,6 +42,13 @@ header {
     margin: 3vw 32vw 5vw 32vw;
     }
 
+audio {
+    float: left;
+    width: 15em;
+    height: 2em;
+    margin: 0 0 0 1em;
+    }
+
 nav {
     /*nav section is sticky, staying on the top of the screen as you scroll*/
     position: sticky;
@@ -359,11 +366,4 @@ button {
     }
 button:hover{
     background-color: lightseagreen;
-    }
-
-audio {
-    float: left;
-    width: 15em;
-    height: 2em;
-    margin: 0 0 0 1em;
     }
